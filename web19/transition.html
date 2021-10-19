@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalble=no"
+    />
+    <style>
+      .clearfix::after {
+        float: none;
+        clear: both;
+        content: "";
+        display: block;
+      }
+
+      .pull-left {
+        float: left;
+      }
+
+      .img-box-container {
+        width: 240px;
+        height: 240px;
+        margin: 10px;
+        background: color #d5d5d5;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .img-box-item {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-size: cover;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .img-box-container:hover > .img-box-item {
+        transform: scale(1.2, 1.2);
+      }
+
+      .img-box-container h2 {
+        width: 100%;
+        position: absolute;
+        top: 100px;
+        left: 0px;
+        z-index: 5;
+        text-align: center;
+        color: #fff;
+        text-shadow: 0 1px 3px #000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="clearfix">
+      <a href="#" class="img-box-container pull-left">
+        <span
+          class="img-box-item"
+          style="background-image: url('sample.jpg')"
+        ></span>
+        <h2>Hello World</h2>
+      </a>
+      <a href="#" class="img-box-container pull-left">
+        <span
+          class="img-box-item"
+          style="background-image: url('sample.jpg')"
+        ></span>
+        <h2>Hello World</h2>
+        <a href="#" class="img-box-container pull-left">
+          <span
+            class="img-box-item"
+            style="background-image: url('sample.jpg')"
+          ></span>
+          <h2>Hello World</h2>
+        </a>
+        <a href="#" class="img-box-container pull-left">
+          <span
+            class="img-box-item"
+            style="background-image: url('sample.jpg')"
+          ></span>
+          <h2>Hello World</h2>
+        </a>
+        <a href="#" class="img-box-container pull-left">
+          <span
+            class="img-box-item"
+            style="background-image: url('sample.jpg')"
+          ></span>
+          <h2>Hello World</h2>
+        </a>
+        <a href="#" class="img-box-container pull-left">
+          <span
+            class="img-box-item"
+            style="background-image: url('sample.jpg')"
+          ></span>
+          <h2>Hello World</h2>
+        </a>
+        <a href="#" class="img-box-container pull-left">
+          <span
+            class="img-box-item"
+            style="background-image: url('sample.jpg')"
+          ></span>
+          <h2>Hello World</h2>
+        </a>
+      </a>
+    </div>
+  </body>
+</html>
