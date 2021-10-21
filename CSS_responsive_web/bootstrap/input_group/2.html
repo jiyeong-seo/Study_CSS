@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+    />
+    <title>input-group</title>
+  </head>
+  <body>
+    <!-- 기본형태(검색창 형태) -->
+
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search" />
+      <span class="input-group-btn">
+        <button type="button" class="btn btn-default">Go!</button>
+      </span>
+    </div>
+
+    <!-- 2)기본형태에서 select를 추가 -->
+    <div class="input-group">
+      <!-- select요소 -->
+      <span class="input-group-btn">
+        <select
+          name="choose"
+          class="form-control"
+          style="width: auto; margin-right: -1px"
+        >
+          <option value="">item1</option>
+          <option value="">item2</option>
+          <option value="">item3</option>
+        </select>
+      </span>
+      <!-- 입력창 -->
+      <input type="text" class="form-control" placeholder="Search" />
+      <span class="input-group-btn">
+        <!-- 버튼 -->
+        <button type="button" class="btn btn-default">Go!</button>
+      </span>
+    </div>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

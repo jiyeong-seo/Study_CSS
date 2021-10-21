@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+    />
+    <title>normal button group</title>
+    <!-- grid 적용되었는지 확인하기 위함 -->
+    <style>
+      .item {
+        border: 5px solid #1e1acb;
+        padding: 10px;
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- 그리드의 전체 영역을 지정하기 위한 박스 -->
+      <div class="row">
+        <!--md노트북-->
+        <div class="col-md-4">
+          <div class="item"></div>
+        </div>
+        <!--위 div와 함께 1줄 구성-->
+        <div class="col-md-8">
+          <div class="item"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="page-header">
+        <h2>데스크탑,노트북 = 8:4, 태블릿 = 6:6 , 핸드폰 = 100%</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-sm-6">
+          <div class="item">left</div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="item">rigth</div>
+        </div>
+      </div>
+    </div>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

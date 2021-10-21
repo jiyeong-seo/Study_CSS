@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
     <!-- Latest compiled and minified CSS -->
     <link
       rel="stylesheet"
@@ -17,20 +13,30 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
     />
+    <title>Grid 중첩시키기</title>
   </head>
-  <body>
-    <div class="container">
-      <div class="page-header">
-        <h1>Hello World!</h1>
-      </div>
-      <p>안녕하세요</p>
-      <a href="" class="btn btn-primary">Click me</a>
-      <a href="" class="btn btn-success">Click me</a>
-      <a href="" class="btn btn-info">Click me</a>
-      <a href="" class="btn btn-warning">Click me</a>
-      <a href="" class="btn btn-danger">Click me</a>
-    </div>
 
+  <!-- Mixed: mobile and desktop -->
+<div class="container">
+  <div>
+      <h4>Mixed: mobile and desktop</h4>
+  </div>
+  <div class="row">
+      <div class="col-xs-12 col-md-8 bg-primary">.col-xs-12 .col-md-8</div>
+      <div class="col-xs-6 col-md-4 bg-info">.col-xs-6 .col-md-4</div>
+  </div>
+  <hr>
+  <div class="row">
+      <div class="col-xs-6 col-md-4 bg-primary">.col-xs-6 .col-md-4</div>
+      <div class="col-xs-6 col-md-4 bg-info">.col-xs-6 .col-md-4</div>
+      <div class="col-xs-6 col-md-4 bg-success">.col-xs-6 .col-md-4</div>
+  </div>
+  <hr>
+<div class="row">
+  <div class="col-xs-6 bg-primary">.col-xs-6</div>
+  <div class="col-xs-6 bg-info">.col-xs-6</div>
+</div>
+</div>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>

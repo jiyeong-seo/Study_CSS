@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+    />
+    <title>input-group</title>
+  </head>
+  <body>
+    <!-- 기본형태 (addon이 앞에 위치) -->
+    <div class="input-group">
+      <div class="input-group-addon">&dollar;</div>
+      <input type="text" class="form-control" placeholder="Amount" />
+    </div>
+
+    <!-- 2)addon을 뒤로 이동 -->
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Amount" />
+      <div class="input-group-addon">&dollar;</div>
+    </div>
+
+    <!-- 3)addon을 앞뒤에 적용 -->
+    <div class="input-group">
+        <div class="input-group-addon">a</div>
+        <input type="text" class="form-control" placeholder="Amount" />
+        <div class="input-group-addon">b</div>
+      </div>
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+    />
+
+    <title>button-group-vertical</title>
+  </head>
+  <body>
+    <div class="btn-group">
+      <button type="button" class="btn btn-default">left</button>
+      <button type="button" class="btn btn-default">middle</button> 
+      <!-- .btn-group 안에 또다른 .btn-group -->
+      <div class="btn-group">
+        <!-- btn 안에 dropdown 구성하기 -->
+        <button
+          type="button"
+          class="btn btn-default dropdown-toggle"
+          data-toggle="dropdown"
+        >
+          dropdown
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="#">dropdown link</a>
+          </li>
+          <li>
+            <a href="#">dropdown link</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="btn-group">
+      <button type="button" class="btn btn-default">Left</button>
+      <button type="button" class="btn btn-default">Middle</button>
+      <!-- .btn-group안에 또다른 .btn-group -->
+      <div class="btn-group">
+        <!-- .btn-group안에 dropdown 구성하기 -->
+        <button
+          type="button"
+          class="btn btn-default dropdown-toggle"
+          data-toggle="dropdown"
+        >
+          Dropdown
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Dropdown link</a></li>
+          <li><a href="#">Dropdown link</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

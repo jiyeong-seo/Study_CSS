@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+    />
+    <title>form</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <div class="page-header">
+        <h1>horizontal form</h1>
+      </div>
+      <!-- form -->
+      <form action="" method="post" class="form-horizontal">
+        <!-- form 구역 나눔 -->
+        <fieldset>
+          <!-- fieldset 이름 설정 -->
+          <legend>Form title</legend>
+
+          <!-- 입력 요소 하나의 단위 -->
+          <div class="form-group">
+            <label for="user_name" class="col-sm-2 control-label">이름</label>
+            <div class="col-sm-10">
+              <input
+                type="text"
+                class="form-control"
+                id="user-name"
+                name="user-name"
+                value=""
+              />
+            </div>
+          </div>
+
+          <!-- 입력 요소 하나의 단위 -->
+          <div class="form-group">
+            <label for="email" class="col-sm-2 control-label">이메일</label>
+            <div class="col-sm-10">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                value=""
+              />
+            </div>
+          </div>
+
+          <!-- 입력 요소 하나의 단위 -->
+          <div class="form-group">
+            <label for="user_id" class="col-sm-2 control-label">아이디</label>
+            <div class="col-sm-10">
+              <!-- input요소와 높이를 맞추기 위해 p요소에 class="form-control-static"을 준다 -->
+              <p class="form-control-static">tomato</p>
+            </div>
+          </div>
+
+          <!-- 선택 항목 -->
+          <div class="form-group">
+            <label for="choose" class="col-sm-2 control-label">선택항목1</label>
+            <div class="col-sm-10">
+              <select name="choose" id="choose" class="form-control">
+                <option value="">--- Select One ---</option>
+                <option value="item1">Select Item 1</option>
+                <option value="item2">Select Item 2</option>
+                <option value="item3">Select Item 3</option>
+                <option value="item4">Select Item 4</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- 라디오박스(기본) -->
+          <div class="form-group">
+            <label for="radio1" class="col-sm-2 control-label">라디오</label>
+            <div class="col-sm-10">
+              <!-- radio요소 하나의 단위 -->
+              <div class="radio">
+                <label>
+                  <input
+                    type="radio"
+                    name="myradio"
+                    id="radio1"
+                    value=""
+                    checked
+                  />Radio Box1
+                </label>
+              </div>
+
+              <!-- radio요소 하나의 단위 -->
+              <div class="radio">
+                <label>
+                  <input
+                    type="radio"
+                    name="myradio"
+                    id="radio2"
+                    value=""
+                    checked
+                  />Radio Box2
+                </label>
+              </div>
+
+              <!-- radio요소 하나의 단위 -->
+              <div class="radio disabled">
+                <label>
+                  <input
+                    type="radio"
+                    name="myradio"
+                    id="radio3"
+                    value=""
+                    disabled
+                  />Radio Box3
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- 체크박스 (기본) -->
+          <div class="form-group">
+              <!-- checkbox 라벨 -->
+            <label for="checkbox1" class="col-sm-2 control-label">체크박스</label>
+            <div class="col-sm-10">
+              <!-- check box요소 하나의 단위 -->
+              <div class="checkbox">
+                <label>
+                  <input
+                    type="checkbox"
+                    name="mycheckbox"
+                    id="checkbox1"
+                    value=""
+                    checked
+                  />Radio Box1
+                </label>
+              </div>
+
+               <!-- check box요소 하나의 단위 -->
+               <div class="checkbox">
+                <label>
+                  <input
+                    type="checkbox"
+                    name="mycheckbox"
+                    id="checkbox2"
+                    value=""
+                
+                  />Radio Box2
+                </label>
+              </div>
+
+               <!-- check box요소 하나의 단위 -->
+               <div class="checkbox disabled">
+                <label>
+                  <input
+                    type="checkbox"
+                    name="mycheckbox"
+                    id="checkbox3"
+                    value=""
+                    disabled
+                  />Radio Box3
+                </label>
+              </div>
+
+              <!-- 라디오박스2(form-inline) -->
+<div class="form-group form-inline">
+    <label for="" class="col-sm-2 control-label"></label>
+    <div class="col-sm-10">
+        <div class="radio">
+            <label for="">
+                <input type="radio" name="" id="">
+            </label>
+        </div>
+    </div>
+</div>
+
+
+
+          <!-- 버튼 -->
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
